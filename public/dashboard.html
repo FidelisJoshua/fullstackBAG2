@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogoni Incident Report</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation-->
+     <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container">
+            <a href="" class="navbar-brand fw-bold">Ogoni Incident Report</a>
+            <div class="navbar-nav ms-auto align-content-center">
+                <a href="index.html" class="nav-link">Incidents</a>
+                <a href="admin.html" class="nav-link">Admin</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link">Sign In</a>
+                <a href="report.html" class="btn btn-success btn-sm ms-3">Report an Incident</a>
+            </div>
+        </div>
+     </nav>
+
+     <div class="container py-5">
+        <div class="welcome d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <p class="small mb-1`">Your Dashboard</p>
+                <h1 class="h3 fw-bold mb-0">Welcome, Fidelis Joshua</h1>
+            </div>
+
+            <div class="text-end">
+                <p class="small-text mb-1"> Your Reporter Code</p>
+                <span class="code-box" id="reporterCode">3456908</span>
+            </div>
+        </div>
+
+        <div class="welcome d-flex justify-content-between align-items-center mb-4">
+            <h2 class="h5 fw-bold mb-0"></h2>
+            <div>
+                <a href="report.html" class="btn btn-success">Report an Incident</a>
+                <button class="btn btn-outline-secondary ms-2" id="signOutButton">Sign Out</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <table class="table mb-0 align-middle">
+                <thead>
+                    <tr>
+                        <th>Report</th>
+                        <th>Reported</th>
+                        <th>Severity</th>
+                        <th>Status</th>
+                        <th>Officers Remark</th>
+                    </tr>
+                </thead>
+                <tbody id="myReports">
+                    <tr>
+                        <td><a href="incident.html">Crude spill at K-Dere creek</a></td>
+                        <td>22 September, 2026</td>
+                        <td>High</td>
+                        <td><span class="badge text bg-danger">New</span></td>
+                        <td class="text-muted">No note yet</td>
+                    </tr>
+                    <tr>
+                        <td><a href="incident.html">Brown Water at Bori borehole</a></td>
+                        <td>25 September, 2025</td>
+                        <td>Medium</td>
+                        <td><span class="badge text bg-success">Resolved</span></td>
+                        <td class="text-muted">Borehole flushed and retested. Water is clean and clear</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+     </div>
+ 
+
+     <footer class="site-footer bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between small">
+            <span>Ogoni Incident Report - A pulic record of enviromental incidents in Ogoni Land</span>
+            <span>Built by Fidelis . HYPREP Capstone 2026.</span>
+        </div>
+     </footer>
+</body>
+</html>

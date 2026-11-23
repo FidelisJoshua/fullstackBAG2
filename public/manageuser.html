@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogoni Incident Report</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <script src="js/api_incident.js"></script>
+</head>
+<body>
+    <!-- Navigation-->
+     <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container">
+            <a href="" class="navbar-brand fw-bold">Ogoni Incident Report</a>
+            <div class="navbar-nav ms-auto align-content-center">
+                <a href="index.html" class="nav-link">Incidents</a>
+                <a href="admin.html" class="nav-link">Admin</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="login.html" class="nav-link">Sign In</a>
+                <a href="report.html" class="btn btn-success btn-sm ms-3">Report an Incident</a>
+            </div>
+        </div>
+     </nav>
+
+     <header class="hero">
+        <div class="container py-5">
+            <p class="eyebrow uppercase small fw-semibold">OgoniLand Rivers State</p>
+            <h1 class="display-5 fw-bold mb-3">See it. Report. Track it until it is fixed.</h1>
+                <p class="lead mb-4">Oil spills, Gas Flaring, Contaminated water and waste dump. Every report is tracked until it is fixed</p>
+                <a href="" class="btn btn-success btn-lg me-2">Report an Incident</a>
+                <a href="" class="btn btn-outline-success btn-lg me-2">Browse reports</a>
+        </div>
+     </header>
+
+     <section class="container stats">
+        <div class="row g-4">
+            <div class="col-3">
+                <div class="card card-body">
+                    <p class="small text-muted mb-1">Report Recieved</p>
+                    <p class="fs-3 fw-bold mb-0" id="countTotal">7</p>
+                </div>
+            </div>
+
+             <div class="col-3">
+                <div class="card card-body">
+                    <p class="small text-muted mb-1">New</p>
+                    <p class="fs-3 fw-bold mb-0" id="countNew">2</p>
+                </div>
+            </div>
+            
+             <div class="col-3">
+                <div class="card card-body">
+                    <p class="small text-muted mb-1">Under Review</p>
+                    <p class="fs-3 fw-bold mb-0" id="countReview">3</p>
+                </div>
+            </div>
+
+             <div class="col-3">
+                <div class="card card-body">
+                    <p class="small text-muted mb-1">Resolved</p>
+                    <p class="fs-3 fw-bold mb-0" id="countResolved">2</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <main class="container py-5" id="reports">
+        <h2 class="h4 fw-bold">Manage Users</h2>
+        <p class="text-muted">Newest first. Select a report to see it's full details.</p>
+        <div class="row g-4" id="reporterlist">
+            <div class="col">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                    <td>SN</td>
+                    <td>Fullname</td>
+                    <td>Reporter Code</td>
+                    <td>Phone</td>
+                    <td>Community</td>
+                    <td>Action</td>                   
+                    </tr>
+                  </thead>
+                  <!-- table body -->
+                   <tbody id="tblist">
+                    <tr>
+                        <td>1</td>
+                        <td>Fidelis</td>
+                        <td>070303</td>
+                        <td>08084314431</td>
+                        <td>Bera</td>
+                        <td><button class="btn  btn-danger">Delete</button></td>
+                    </tr>
+                   </tbody>
+                </table>
+            </div>
+        </div>
+     </main>
+
+     <footer class="site-footer bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between small">
+            <span>Ogoni Incident Report - A pulic record of enviromental incidents in Ogoni Land</span>
+            <span>Built by Fidelis . HYPREP Capstone 2026.</span>
+        </div>
+     </footer>
+
+     <script>
+        getIncidents();
+     </script>
+</body>
+</html>
